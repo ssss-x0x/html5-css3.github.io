@@ -1,0 +1,80 @@
+@charset "utf-8";
+
+$accent: #6fbb9a;
+$accent-secondary: #66d5ad;
+$red: #df4839;
+$orange: #f6bb9e;
+$white: #fafafa;
+$bg: #fafadd;
+$gray: #555;
+
+/* ウィンドウ背景色の設定 */
+body {
+  background-color: $bg;
+  color: $gray;
+}
+
+/* リンク色の設定 */
+a {
+  color: $red;
+  &:hover {
+    color: $orange;
+    text-decoration: none;
+  }
+}
+
+/* ヘッダー・ナビ・フッターの共通設定 */
+header,
+nav,
+footer {
+  text-align: center;
+}
+/* ナビ */
+/* ページタイトルの設定 */
+h1 {
+  width: 300px;
+  margin: 40px auto;
+  padding: 30px;
+  border: 5px solid $accent-secondary;
+  background-color: $accent;
+  color: $white;
+  font-size: 3rem;
+  text-align: center;
+  line-height: 1;
+}
+/* 大見出しの設定 */
+.h {
+  padding: 10px;
+  margin-bottom: 30px;
+  border: 1px dotted $accent-secondary;
+  border-left: 10px solid $accent-secondary;
+  color: $accent;
+}
+/* 小見出しの設定 */
+.h-sub {
+  span {
+    font-weight: normal;
+  }
+}
+/* コンテンツ枠の設定 */
+#contents {
+  margin: 40px;
+  padding: 40px 80px;
+  border: 1px solid $orange;
+  background-color: $white;
+  > section + section {
+    margin-top: 80px;
+  }
+}
+
+/* 「もっと見る」リンクの設定 */
+.more {
+  text-align: right;
+  a {
+    text-decoration: none;
+  }
+  i {
+    margin-left: 5px;
+  }
+}
+/* リンク種別アイコン */

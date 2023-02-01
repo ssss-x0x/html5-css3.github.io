@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chapter02 | Lesson05 | CSSの概要</title>
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
+    <link rel="stylesheet" href="../../sass/sample.css" />
+  </head>
+  <body>
+    <section>
+      <h1>CSSの概要</h1>
+    </section>
+    <section>
+      <h2>CSSの基本ルール</h2>
+      <section>
+        <h3>基本書式</h3>
+        <p>
+          セレクタ・プロパティ・値の基本書式に沿って「どこの」「何を」「どうする」かを定義する
+        </p>
+        <p>
+          <code>
+            セレクタ { プロパティ: 値 } <br />
+            【例】 <br />
+            h1 { color: #ff0000; }
+          </code>
+        </p>
+      </section>
+      <section>
+        <h3>CSSでの色指定</h3>
+        <p>
+          上記サンプルに載せた方法以外でも
+          #ff0000などで表現する16進数、10進数で表現するRGB値、不透明度も指定できるRGBaの設定、redなどのカラーネームでの指定もできる。
+        </p>
+      </section>
+      <section>
+        <h3>CSSで使う単位</h3>
+        <p>相対単位と絶対単位で指定する方法がある。</p>
+        <h4>相対単位</h4>
+        <dl>
+          <dt>px</dt>
+          <dd>モニタの画素（ピクセル）を1とする単位</dd>
+          <dt>%</dt>
+          <dd>パーセントで割合を指定</dd>
+          <dt>em</dt>
+          <dd>親要素の小文字xの高さを1とする単位</dd>
+          <dt>rem</dt>
+          <dd>ルート要素の大文字Mの高さを1とする単位</dd>
+          <dt>vw</dt>
+          <dd>viewportの幅の1/100を1とする単位</dd>
+          <dt>vh</dt>
+          <dd>viewportの高さの1/100を1とする単位</dd>
+        </dl>
+        <p>
+          所感:
+          emとremを見かけることが多い気がするけど、remで定義した方が基準となるサイズが一意なので迷子にはなりにくそう
+        </p>
+        <h4>絶対単位</h4>
+        <dl>
+          <dt>pt</dt>
+          <dd>ポイント。1pt = 1/72in</dd>
+          <dt>pc</dt>
+          <dd>パイカ。1pc = 12pt</dd>
+          <dt>mm</dt>
+          <dd>ミリメートル</dd>
+          <dt>cm</dt>
+          <dd>センチメートル</dd>
+          <dt>in</dt>
+          <dd>インチ。 1in = 2.54cm</dd>
+        </dl>
+        <p>
+          所感:
+          viewportを考慮した記述には向いていなさそうなので、帳票など物理的に出力するものに使用するのが良さそう
+        </p>
+      </section>
+    </section>
+  </body>
+</html>

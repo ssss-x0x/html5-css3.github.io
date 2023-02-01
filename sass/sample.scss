@@ -6,4 +6,40 @@ $alert: #ffff55;
 body {
     background-color: $white;
     color: $gray;
+    padding: 0 20px;
+    font-size: 16px;
+}
+
+section {
+    margin: 20px 0;
+}
+
+code {
+    display: block;
+    padding: 10px;
+    line-height: 1.1rem;
+    background-color: $gray;
+    color: $white;
+}
+
+dl {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    dt {
+        width: 30%;
+        font-weight: bold;
+    }
+    dd {
+        width: 70%;
+    }
+}
+
+p {
+    margin-bottom: 10px;
+}
+
+h1 {
+    font-size: 2rem;
+    border-bottom: 1px solid $gray;
 }

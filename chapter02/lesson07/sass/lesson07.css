@@ -1,0 +1,79 @@
+@charset "UTF-8";
+/* ウィンドウ背景色の設定 */
+body {
+  background-color: #fafadd;
+  color: #555;
+}
+
+/* リンク色の設定 */
+a {
+  color: #df4839;
+}
+
+a:hover {
+  color: #f6bb9e;
+  text-decoration: none;
+}
+
+/* ヘッダー・ナビ・フッターの共通設定 */
+header,
+nav,
+footer {
+  text-align: center;
+}
+
+/* ナビ */
+/* ページタイトルの設定 */
+h1 {
+  width: 300px;
+  margin: 40px auto;
+  padding: 30px;
+  border: 5px solid #66d5ad;
+  background-color: #6fbb9a;
+  color: #fafafa;
+  font-size: 3rem;
+  text-align: center;
+  line-height: 1;
+}
+
+/* 大見出しの設定 */
+.h {
+  padding: 10px;
+  margin-bottom: 30px;
+  border: 1px dotted #66d5ad;
+  border-left: 10px solid #66d5ad;
+  color: #6fbb9a;
+}
+
+/* 小見出しの設定 */
+.h-sub span {
+  font-weight: normal;
+}
+
+/* コンテンツ枠の設定 */
+#contents {
+  margin: 40px;
+  padding: 40px 80px;
+  border: 1px solid #f6bb9e;
+  background-color: #fafafa;
+}
+
+#contents > section + section {
+  margin-top: 80px;
+}
+
+/* 「もっと見る」リンクの設定 */
+.more {
+  text-align: right;
+}
+
+.more a {
+  text-decoration: none;
+}
+
+.more i {
+  margin-left: 5px;
+}
+
+/* リンク種別アイコン */
+/*# sourceMappingURL=lesson07.css.map */

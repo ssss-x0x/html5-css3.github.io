@@ -1,5 +1,46 @@
 body {
   background-color: #fafafa;
   color: #333;
+  padding: 0 20px;
+  font-size: 16px;
+}
+
+section {
+  margin: 20px 0;
+}
+
+code {
+  display: block;
+  padding: 10px;
+  line-height: 1.1rem;
+  background-color: #333;
+  color: #fafafa;
+}
+
+dl {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+}
+
+dl dt {
+  width: 30%;
+  font-weight: bold;
+}
+
+dl dd {
+  width: 70%;
+}
+
+p {
+  margin-bottom: 10px;
+}
+
+h1 {
+  font-size: 2rem;
+  border-bottom: 1px solid #333;
 }
 /*# sourceMappingURL=sample.css.map */
